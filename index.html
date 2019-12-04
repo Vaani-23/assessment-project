@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style11.css">
+
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <title>Sign in</title>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" align="center">Login</p>
+    <form action='./home.html' class="form1" style="text-align: center; margin-left: -30px;">
+      <input id="username" class="un" type="text" align="center" placeholder="Username">
+      <input id="password" class="pass" type="password" align="center" placeholder="Password">
+      <br>
+      <button style="margin-left: 50px;" type="SUBMIT" class="submit" onclick="return dosome()">Login</button>
+      <p class="forgot" style="margin-left: 50px;" align="center"><a href="#">Forgot Password?</p>
+            
+                
+    </div>
+     <script type="text/javascript">
+       var arr = [];
+       arr.push({"username":"vaani", "password":"vaani"});
+       arr.push({"username":"vaani1", "password":"vaani1"});
+       arr.push({"username":"vaani2", "password":"vaani2"});
+       var c=0;
+       function dosome()
+       {
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+
+          for(var i=0;i<arr.length;i++)
+          {
+            if((arr[i].username).localeCompare(username)==0)
+            {
+              if((arr[i].password).localeCompare(password)==0)
+              {
+                c=1;
+                return true;
+              }
+              else
+              {
+                alert('wrong password');
+                return false;
+                c=1;
+              }
+            }
+          }
+          if(c==0)
+          {
+            alert("invalid username");
+            return false;
+          }
+          c=0;
+       }
+     </script>
+</body>
+
+</html>

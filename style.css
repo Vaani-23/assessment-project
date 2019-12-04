@@ -1,0 +1,111 @@
+body{
+	margin:0;
+	background-size: 100%;
+	overflow-x: hidden; 
+}
+#myheader{
+	background-size: 100%;
+	height: 80%;
+	background-image: url('./images/back1.jpg');
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 100%;
+}
+.nav{
+	width: 100%;
+	height: 60px;
+	background-color:transparent;
+	color:#fff;
+	padding: 20px 10px;
+}
+.left-nav{
+	color:#fff;
+	float: left;
+	margin-left :  80px;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: combo;
+	margin-top: 10px;
+	
+}
+.logo{
+	margin-top: 0px;
+	float: left;
+	margin-left: 35px;
+	font-family: 'Charmonman';
+}
+
+#imgcontainer{
+	width: 110%;
+	height: auto;
+}
+#wrapper{
+	margin-top: 600px;
+	height: 1600px;
+	overflow-y:  scroll;
+}
+#singleimg{
+	width: 400px;
+	height: 300px;
+}
+#search{
+	width: 50%;
+	height: 40px;
+	margin-top:70px;
+	padding: 10px 10px;
+	font-size: 20px;
+	color: #000;
+	border-radius: 10px;
+	z-index: 1;
+}
+#search1{
+	width: 10%;
+	height: 40px;
+	font-size: 20px;
+	background-color:#fcba03;
+	color: #fff;
+	border-radius: 20px;
+	border: none; 
+}
+#search1:hover
+{
+	
+	color: black;
+}
+.left-nav:hover
+{
+	color: #fcba03
+}
+#git:hover
+{
+opacity: 0.6;
+}
+#linked:hover
+{
+	opacity: 0.6;
+}
+#resume:hover
+{
+opacity: 0.6;
+}
+#singleimg:hover
+{
+opacity: 0.8;
+}
+.right-nav{
+margin-top: 10px;
+color:#fff;
+float: right;
+margin-right: 45px;
+font-size: 25px;
+font-weight: 700;
+font-family: combo;
+background: transparent;
+border-radius: 10px;
+border-color: #fcba03;
+}
+.right-nav:hover
+{
+	color: #fcba03;
+	border-color: white;
+}
